@@ -61,12 +61,12 @@ nav {
     height: 500px;
     margin: auto;
     display: flex;
+    padding: 39px 50px 20px;
 }
 
 .splash_text {
     color: #FFF;
     font-family: PT Sans, serif;
-    margin: 140px 212px 324px;
     width: 526px;
 }
 
@@ -110,6 +110,7 @@ nav {
 
 .card {
     display: flex;
+    flex-direction: column;
     padding: 30px 35px;
     border-radius: 20px;
     background: #5DB7DE;
@@ -132,10 +133,13 @@ nav {
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
+    margin-top: auto;
 
 }
 .midsection{
-    height: 650px;
+
+    padding: 50px;
+    /* height: 650px; */
     background: white;
     display: flex;
 }
@@ -195,13 +199,44 @@ nav {
     margin-left: 15px;
 }
 .midsection_about_company{
-    /*opacity: 0.05;*/
-    /*background: #3D348B;*/
+    background: #f0f0f0;
+
+}
+.about_company{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .ship_img{
     border-radius: 20px;
     width: 526px;
     height: 350px;
     flex-shrink: 0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.foo-top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #3D348B;
+    height: 70px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.foo-bottom{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #b6aeff;
+    height: auto;
+    font-size: 20px;
+    color: #000000;
 }
