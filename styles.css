@@ -95,26 +95,17 @@ nav {
     display: inline-flex;
     margin-left: 15px;
 }
-/*.splash_cards{*/
-/*    margin-top: 100px;*/
-/*    grid-template-columns: 150px 150px 150px;*/
-/*}*/
-/*.card{*/
-/*    width: 140px;*/
-/*    height: 100px;*/
-/*    display: flex;*/
-/*    padding: 30px 35px;*/
-/*    border-radius: 20px;*/
-/*    background: #5DB7DE;*/
-/*}*/
+
 .splash_cards {
-    grid-template-columns: 160px 160px;
-    grid-template-rows: 120px 120px;
-    display: flex;
+
     flex-wrap: wrap;
-    gap: 15px;
     margin-bottom: 125px;
     margin-top: 85px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    grid-template-rows: repeat(2, auto); /* Две строки с авто высотой */
+    gap: 20px; /* Отступы между карточками */
+    border-radius: 20px;
 }
 
 .card {
